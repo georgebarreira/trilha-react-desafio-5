@@ -59,7 +59,7 @@ export default function Index({ posts, globalData }) {
   );
 }
 
-export async function getServerSideProps() {
+export async function () {
   const posts = await getPosts();
   const globalData = getGlobalData()
 
